@@ -1,5 +1,6 @@
 package javaApp;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -17,6 +18,7 @@ public class Frame extends JFrame implements ActionListener{
     private JTextField text;
     private JButton submit;
     private JButton restart;
+    private boolean messageIsEditable = true;
     private Font font = new Font(Font.SANS_SERIF, Font.BOLD, 18);
 
     private static Frame frame = new Frame();
@@ -30,11 +32,24 @@ public class Frame extends JFrame implements ActionListener{
     }
 
     public void setMessage(String message){
+        if(!this.messageIsEditable) return;
         this.message.setText(message);
     }
 
     public void setMessageColorToRed(){
         this.message.setForeground(Color.RED);
+    }
+
+    public void setMessageColorToGreen(){
+        this.message.setForeground(Color.GREEN);
+    }
+
+    public void setMessageNonEditable(){
+        this.messageIsEditable = false;
+    }
+
+    public void setMessageEditable(){
+        this.messageIsEditable = true;
     }
 
     private Frame(){
@@ -87,6 +102,8 @@ public class Frame extends JFrame implements ActionListener{
         else if(e.getSource() == restart){
             setMessage("");
             text.setText("");
+            setMessageEditable();
+            GameLogic.resetAttemptCount();
         }
     }
 }
