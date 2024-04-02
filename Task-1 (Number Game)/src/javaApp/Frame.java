@@ -99,9 +99,10 @@ public class Frame extends JFrame implements ActionListener{
         if(e.getSource() == submit)
             GameLogic.checkForWin(getText());
         else if(e.getSource() == restart){
-            setMessage("");
-            text.setText("");
             setMessageEditable();
+            text.setText("");
+            setMessage("");
+            GameLogic.generateNewRandom();
             GameLogic.resetAttemptCount();
         }
     }

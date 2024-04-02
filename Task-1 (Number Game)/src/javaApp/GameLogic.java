@@ -8,12 +8,19 @@ public class GameLogic {
     private static int attempts = 0;
     private static int upperBound = 100;
     private static int lowerBound = 1;
-    static {
+
+    static{
         randomNumber = randomGenerator.nextInt(upperBound - lowerBound + 1) + lowerBound;
     }
+    
+    public static void generateNewRandom(){
+        randomNumber = randomGenerator.nextInt(upperBound - lowerBound + 1) + lowerBound;
+    }
+
     public static void resetAttemptCount(){
         attempts = 0;
     }
+
     public static void checkForWin(String enteredNumber){
         int inputNumber = -1;
         Frame frame = Frame.getFrame();
@@ -35,10 +42,10 @@ public class GameLogic {
         if(inputNumber != randomNumber){
             attempts++;
             if(inputNumber > randomNumber){
-                frame.setMessage("Entered Number is too high! Attempts: " + attempts);
+                frame.setMessage("Entered Number is "+ isFarAway(inputNumber) + isClose(inputNumber) +" high! Attempts: " + attempts);
                 frame.setMessageColorToRed();
             } else {
-                frame.setMessage("Entered Number is too low! Attempts: " + attempts);
+                frame.setMessage("Entered Number is "+ isFarAway(inputNumber) + isClose(inputNumber) +" low! Attempts: " + attempts);
                 frame.setMessageColorToRed();
             }
         } else {
@@ -47,5 +54,14 @@ public class GameLogic {
             frame.setMessageColorToGreen();
             frame.setMessageNonEditable();
         }
+    }
+
+    private static String isFarAway(int inputNumber){
+        if(Math.abs(randomNumber - inputNumber) >= 10) return "too";
+        else return "";
+    }
+    private static String isClose(int inputNumber){
+        if(Math.abs(randomNumber - inputNumber) < 10) return "close and";
+        else return "";
     }
 }
