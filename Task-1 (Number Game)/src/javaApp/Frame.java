@@ -4,13 +4,15 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+import javax.swing.UIManager;
 
 import java.awt.Color;
+import java.awt.Container;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Frame extends JFrame implements ActionListener{
+public class Frame extends JFrame implements ActionListener {
     private JLabel label1;
     private JLabel label2;
     private JLabel message;
@@ -18,40 +20,42 @@ public class Frame extends JFrame implements ActionListener{
     private JButton submit;
     private JButton restart;
     private boolean messageIsEditable = true;
+    private Container container;
     private Font font = new Font(Font.SANS_SERIF, Font.BOLD, 18);
 
     private static Frame frame = new Frame();
 
-    public static Frame getFrame(){
+    public static Frame getFrame() {
         return frame;
     }
 
-    public String getText(){
+    public String getText() {
         return this.text.getText();
     }
 
-    public void setMessage(String message){
-        if(!this.messageIsEditable) return;
+    public void setMessage(String message) {
+        if (!this.messageIsEditable)
+            return;
         this.message.setText(message);
     }
 
-    public void setMessageColorToRed(){
+    public void setMessageColorToRed() {
         this.message.setForeground(Color.RED);
     }
 
-    public void setMessageColorToGreen(){
-        this.message.setForeground(Color.GREEN);
+    public void setMessageColorToGreen() {
+        this.message.setForeground(new Color(0, 117, 94));
     }
 
-    public void setMessageNonEditable(){
+    public void setMessageNonEditable() {
         this.messageIsEditable = false;
     }
 
-    public void setMessageEditable(){
+    public void setMessageEditable() {
         this.messageIsEditable = true;
     }
 
-    private Frame(){
+    private Frame() {
         this.setTitle("Number Game");
         this.setSize(600, 400);
         this.setLocationRelativeTo(null);
@@ -59,6 +63,9 @@ public class Frame extends JFrame implements ActionListener{
         this.setResizable(false);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
+        container = this.getContentPane();
+        container.setBackground(new Color(161, 238, 189));
+        
         label1 = new JLabel("Welcome to the Number Game");
         label1.setBounds(150, 30, 300, 50);
         label1.setFont(new Font("Calibri (Body)", Font.BOLD, 20));
@@ -80,13 +87,13 @@ public class Frame extends JFrame implements ActionListener{
         this.add(message);
 
         submit = new JButton("Submit");
-        submit.setBounds(200 - 30, 150 + 100, 100, 30);
+        submit.setBounds(200 - 30, 150 + 100, 120, 30);
         submit.setFont(new Font("Calibri (Body)", Font.BOLD, 20));
         submit.addActionListener(this);
         this.add(submit);
 
-        restart = new JButton("restart");
-        restart.setBounds(350 - 20, 150 + 100, 100, 30);
+        restart = new JButton("Restart");
+        restart.setBounds(350 - 20, 150 + 100, 120, 30);
         restart.setFont(new Font("Calibri (Body)", Font.BOLD, 20));
         restart.addActionListener(this);
         this.add(restart);
@@ -96,9 +103,9 @@ public class Frame extends JFrame implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if(e.getSource() == submit)
+        if (e.getSource() == submit)
             GameLogic.checkForWin(getText());
-        else if(e.getSource() == restart){
+        else if (e.getSource() == restart) {
             setMessageEditable();
             text.setText("");
             setMessage("");
