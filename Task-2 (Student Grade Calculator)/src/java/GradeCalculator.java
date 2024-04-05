@@ -1,7 +1,7 @@
 package src.java;
 
-public class StudentGradeCalculator{
+public class GradeCalculator {
     public static void main(String[] args) {
-        Frame.main(null);
+        Frame.getFrame();
     }
 }
