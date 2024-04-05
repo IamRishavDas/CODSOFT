@@ -1,7 +1,7 @@
 package src.java;
 
 import java.awt.BorderLayout;
-
+import java.awt.Font;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -28,6 +28,10 @@ public class Frame extends JFrame {
 		String[] columns = { "Subject Name", "Marks", "Percentage(%)" };
 		model = new DefaultTableModel(columns, 0);
 		table = new JTable(model);
+		table.setRowHeight(25);
+		table.setFont(new Font("Arial", Font.PLAIN, 18));
+		table.getTableHeader().setFont(new Font("Arial", Font.BOLD, 18));
+		
 
 		scrollPane = new JScrollPane(table);
 
@@ -71,9 +75,11 @@ public class Frame extends JFrame {
 		return colData;
 	}
 
-	public void setCellData(int newValue, int row, int col){
+	public void setCellData(String newValue, int row, int col){
 		if(this.getTableRowCount() >= row || this.getTableColumnCount() >= col) return;
 		table.setValueAt(newValue, row, col);
+		table.updateUI();
+		this.repaint();
 	}
 
 	private void addRow() {
