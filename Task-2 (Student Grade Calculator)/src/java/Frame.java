@@ -77,9 +77,7 @@ public class Frame extends JFrame {
 
 	public void setCellData(String newValue, int row, int col){
 		if(this.getTableRowCount() >= row || this.getTableColumnCount() >= col) return;
-		table.setValueAt(newValue, row, col);
-		table.updateUI();
-		this.repaint();
+		model.setValueAt(newValue, row, col);
 	}
 
 	private void addRow() {
