@@ -25,7 +25,7 @@ public class Frame extends JFrame {
 	private Frame() {
 		super("Student Grade Calculator");
 
-		String[] columns = { "Subject Name", "Marks", "Percentage(%)" };
+		String[] columns = { "Subject Name", "Marks"};
 		model = new DefaultTableModel(columns, 0);
 		table = new JTable(model);
 		table.setRowHeight(25);
@@ -81,7 +81,7 @@ public class Frame extends JFrame {
 	}
 
 	private void addRow() {
-		model.addRow(new Object[] { "", "", "" });
+		model.addRow(new Object[] { "", ""});
 	}
 
 	private void clearRows() {
