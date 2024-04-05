@@ -28,24 +28,24 @@ public class Frame extends JFrame {
         jLabel3 = new JLabel();
         jLabel4 = new JLabel();
 
-        jTextField1  = new JTextField();
-        jTextField2  = new JTextField();
-        jTextField3  = new JTextField();
-        jTextField4  = new JTextField();
-        jTextField5  = new JTextField();
-        jTextField6  = new JTextField();
-        jTextField7  = new JTextField();
-        jTextField8  = new JTextField();
-        jTextField9  = new JTextField();
-        jTextField10 = new JTextField();
-        jTextField11 = new JTextField();
-        jTextField12 = new JTextField();
-        jTextField13 = new JTextField();
-        jTextField14 = new JTextField();
-        jTextField15 = new JTextField();
-        jTextField16 = new JTextField();
-        jTextField17 = new JTextField();
-        jTextField18 = new JTextField();
+        subject1  = new JTextField();
+        subject2  = new JTextField();
+        subject3  = new JTextField();
+        subject4  = new JTextField();
+        subject5  = new JTextField();
+        subject6  = new JTextField();
+        subject7  = new JTextField();
+        subject8  = new JTextField();
+        subject9  = new JTextField();
+        subject10 = new JTextField();
+        subject11 = new JTextField();
+        subject12 = new JTextField();
+        subject13 = new JTextField();
+        subject14 = new JTextField();
+        subject15 = new JTextField();
+        subject16 = new JTextField();
+        subject17 = new JTextField();
+        subject18 = new JTextField();
 
         jLabel5  = new JLabel();
         jLabel6  = new JLabel();
@@ -85,24 +85,24 @@ public class Frame extends JFrame {
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18));
         jLabel4.setText("Percentage(%)");
 
-        jTextField1.setHorizontalAlignment      (JTextField.CENTER);
-        jTextField2.setHorizontalAlignment      (JTextField.CENTER);
-        jTextField3.setHorizontalAlignment      (JTextField.CENTER);
-        jTextField4.setHorizontalAlignment      (JTextField.CENTER);
-        jTextField5.setHorizontalAlignment      (JTextField.CENTER);
-        jTextField6.setHorizontalAlignment      (JTextField.CENTER);
-        jTextField7.setHorizontalAlignment      (JTextField.CENTER);
-        jTextField8.setHorizontalAlignment      (JTextField.CENTER);
-        jTextField9.setHorizontalAlignment      (JTextField.CENTER);
-        jTextField10.setHorizontalAlignment     (JTextField.CENTER);
-        jTextField11.setHorizontalAlignment     (JTextField.CENTER);
-        jTextField12.setHorizontalAlignment     (JTextField.CENTER);
-        jTextField13.setHorizontalAlignment     (JTextField.CENTER);
-        jTextField14.setHorizontalAlignment     (JTextField.CENTER);
-        jTextField15.setHorizontalAlignment     (JTextField.CENTER);
-        jTextField16.setHorizontalAlignment     (JTextField.CENTER);
-        jTextField17.setHorizontalAlignment     (JTextField.CENTER);
-        jTextField18.setHorizontalAlignment     (JTextField.CENTER);
+        subject1.setHorizontalAlignment      (JTextField.CENTER);
+        subject2.setHorizontalAlignment      (JTextField.CENTER);
+        subject3.setHorizontalAlignment      (JTextField.CENTER);
+        subject4.setHorizontalAlignment      (JTextField.CENTER);
+        subject5.setHorizontalAlignment      (JTextField.CENTER);
+        subject6.setHorizontalAlignment      (JTextField.CENTER);
+        subject7.setHorizontalAlignment      (JTextField.CENTER);
+        subject8.setHorizontalAlignment      (JTextField.CENTER);
+        subject9.setHorizontalAlignment      (JTextField.CENTER);
+        subject10.setHorizontalAlignment     (JTextField.CENTER);
+        subject11.setHorizontalAlignment     (JTextField.CENTER);
+        subject12.setHorizontalAlignment     (JTextField.CENTER);
+        subject13.setHorizontalAlignment     (JTextField.CENTER);
+        subject14.setHorizontalAlignment     (JTextField.CENTER);
+        subject15.setHorizontalAlignment     (JTextField.CENTER);
+        subject16.setHorizontalAlignment     (JTextField.CENTER);
+        subject17.setHorizontalAlignment     (JTextField.CENTER);
+        subject18.setHorizontalAlignment     (JTextField.CENTER);
 
         jLabel5.setHorizontalAlignment(SwingConstants.CENTER);
         jLabel5.setText("%");
@@ -171,15 +171,15 @@ public class Frame extends JFrame {
                                 .addGap(68, 68, 68)
                                 .addGroup(jPanel1Layout
                                         .createParallelGroup(GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jTextField9)
-                                        .addComponent(jTextField8)
-                                        .addComponent(jTextField7)
-                                        .addComponent(jTextField6)
-                                        .addComponent(jTextField5)
-                                        .addComponent(jTextField4)
-                                        .addComponent(jTextField3)
-                                        .addComponent(jTextField2)
-                                        .addComponent(jTextField1)
+                                        .addComponent(subject9)
+                                        .addComponent(subject8)
+                                        .addComponent(subject7)
+                                        .addComponent(subject6)
+                                        .addComponent(subject5)
+                                        .addComponent(subject4)
+                                        .addComponent(subject3)
+                                        .addComponent(subject2)
+                                        .addComponent(subject1)
                                         .addComponent(jLabel2, GroupLayout.DEFAULT_SIZE,
                                                 GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addGroup(jPanel1Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
@@ -188,31 +188,31 @@ public class Frame extends JFrame {
                                                 .addGroup(jPanel1Layout
                                                         .createParallelGroup(GroupLayout.Alignment.LEADING,
                                                                 false)
-                                                        .addComponent(jTextField18,
+                                                        .addComponent(subject18,
                                                                 GroupLayout.PREFERRED_SIZE, 1,
                                                                 Short.MAX_VALUE)
-                                                        .addComponent(jTextField17,
+                                                        .addComponent(subject17,
                                                                 GroupLayout.PREFERRED_SIZE, 1,
                                                                 Short.MAX_VALUE)
-                                                        .addComponent(jTextField16,
+                                                        .addComponent(subject16,
                                                                 GroupLayout.PREFERRED_SIZE, 1,
                                                                 Short.MAX_VALUE)
-                                                        .addComponent(jTextField15,
+                                                        .addComponent(subject15,
                                                                 GroupLayout.PREFERRED_SIZE, 1,
                                                                 Short.MAX_VALUE)
-                                                        .addComponent(jTextField14,
+                                                        .addComponent(subject14,
                                                                 GroupLayout.PREFERRED_SIZE, 1,
                                                                 Short.MAX_VALUE)
-                                                        .addComponent(jTextField13,
+                                                        .addComponent(subject13,
                                                                 GroupLayout.PREFERRED_SIZE, 1,
                                                                 Short.MAX_VALUE)
-                                                        .addComponent(jTextField12,
+                                                        .addComponent(subject12,
                                                                 GroupLayout.PREFERRED_SIZE, 1,
                                                                 Short.MAX_VALUE)
-                                                        .addComponent(jTextField11,
+                                                        .addComponent(subject11,
                                                                 GroupLayout.PREFERRED_SIZE, 1,
                                                                 Short.MAX_VALUE)
-                                                        .addComponent(jTextField10,
+                                                        .addComponent(subject10,
                                                                 GroupLayout.PREFERRED_SIZE, 44,
                                                                 GroupLayout.PREFERRED_SIZE)))
                                         .addGroup(jPanel1Layout.createSequentialGroup()
@@ -278,82 +278,82 @@ public class Frame extends JFrame {
                                         .addComponent(jLabel4))
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel1Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jTextField1, GroupLayout.PREFERRED_SIZE,
+                                        .addComponent(subject1, GroupLayout.PREFERRED_SIZE,
                                                 GroupLayout.DEFAULT_SIZE,
                                                 GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jTextField10, GroupLayout.PREFERRED_SIZE,
+                                        .addComponent(subject10, GroupLayout.PREFERRED_SIZE,
                                                 GroupLayout.DEFAULT_SIZE,
                                                 GroupLayout.PREFERRED_SIZE)
                                         .addComponent(jLabel5))
                                 .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jTextField2, GroupLayout.PREFERRED_SIZE,
+                                        .addComponent(subject2, GroupLayout.PREFERRED_SIZE,
                                                 GroupLayout.DEFAULT_SIZE,
                                                 GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jTextField11, GroupLayout.PREFERRED_SIZE,
+                                        .addComponent(subject11, GroupLayout.PREFERRED_SIZE,
                                                 GroupLayout.DEFAULT_SIZE,
                                                 GroupLayout.PREFERRED_SIZE)
                                         .addComponent(jLabel6))
                                 .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jTextField3, GroupLayout.PREFERRED_SIZE,
+                                        .addComponent(subject3, GroupLayout.PREFERRED_SIZE,
                                                 GroupLayout.DEFAULT_SIZE,
                                                 GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jTextField12, GroupLayout.PREFERRED_SIZE,
+                                        .addComponent(subject12, GroupLayout.PREFERRED_SIZE,
                                                 GroupLayout.DEFAULT_SIZE,
                                                 GroupLayout.PREFERRED_SIZE)
                                         .addComponent(jLabel7))
                                 .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jTextField4, GroupLayout.PREFERRED_SIZE,
+                                        .addComponent(subject4, GroupLayout.PREFERRED_SIZE,
                                                 GroupLayout.DEFAULT_SIZE,
                                                 GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jTextField13, GroupLayout.PREFERRED_SIZE,
+                                        .addComponent(subject13, GroupLayout.PREFERRED_SIZE,
                                                 GroupLayout.DEFAULT_SIZE,
                                                 GroupLayout.PREFERRED_SIZE)
                                         .addComponent(jLabel8))
                                 .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jTextField5, GroupLayout.PREFERRED_SIZE,
+                                        .addComponent(subject5, GroupLayout.PREFERRED_SIZE,
                                                 GroupLayout.DEFAULT_SIZE,
                                                 GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jTextField14, GroupLayout.PREFERRED_SIZE,
+                                        .addComponent(subject14, GroupLayout.PREFERRED_SIZE,
                                                 GroupLayout.DEFAULT_SIZE,
                                                 GroupLayout.PREFERRED_SIZE)
                                         .addComponent(jLabel9))
                                 .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jTextField6, GroupLayout.PREFERRED_SIZE,
+                                        .addComponent(subject6, GroupLayout.PREFERRED_SIZE,
                                                 GroupLayout.DEFAULT_SIZE,
                                                 GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jTextField15, GroupLayout.PREFERRED_SIZE,
+                                        .addComponent(subject15, GroupLayout.PREFERRED_SIZE,
                                                 GroupLayout.DEFAULT_SIZE,
                                                 GroupLayout.PREFERRED_SIZE)
                                         .addComponent(jLabel10))
                                 .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jTextField7, GroupLayout.PREFERRED_SIZE,
+                                        .addComponent(subject7, GroupLayout.PREFERRED_SIZE,
                                                 GroupLayout.DEFAULT_SIZE,
                                                 GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jTextField16, GroupLayout.PREFERRED_SIZE,
+                                        .addComponent(subject16, GroupLayout.PREFERRED_SIZE,
                                                 GroupLayout.DEFAULT_SIZE,
                                                 GroupLayout.PREFERRED_SIZE)
                                         .addComponent(jLabel11))
                                 .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jTextField8, GroupLayout.PREFERRED_SIZE,
+                                        .addComponent(subject8, GroupLayout.PREFERRED_SIZE,
                                                 GroupLayout.DEFAULT_SIZE,
                                                 GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jTextField17, GroupLayout.PREFERRED_SIZE,
+                                        .addComponent(subject17, GroupLayout.PREFERRED_SIZE,
                                                 GroupLayout.DEFAULT_SIZE,
                                                 GroupLayout.PREFERRED_SIZE)
                                         .addComponent(jLabel12))
                                 .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jTextField9, GroupLayout.PREFERRED_SIZE,
+                                        .addComponent(subject9, GroupLayout.PREFERRED_SIZE,
                                                 GroupLayout.DEFAULT_SIZE,
                                                 GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jTextField18, GroupLayout.PREFERRED_SIZE,
+                                        .addComponent(subject18, GroupLayout.PREFERRED_SIZE,
                                                 GroupLayout.DEFAULT_SIZE,
                                                 GroupLayout.PREFERRED_SIZE)
                                         .addComponent(jLabel13))
@@ -465,23 +465,23 @@ public class Frame extends JFrame {
     private JLabel jLabel9;
     private JPanel jPanel1;
     
-    private JTextField jTextField1;
-    private JTextField jTextField10;
-    private JTextField jTextField11;
-    private JTextField jTextField12;
-    private JTextField jTextField13;
-    private JTextField jTextField14;
-    private JTextField jTextField15;
-    private JTextField jTextField16;
-    private JTextField jTextField17;
-    private JTextField jTextField18;
-    private JTextField jTextField2;
-    private JTextField jTextField3;
-    private JTextField jTextField4;
-    private JTextField jTextField5;
-    private JTextField jTextField6;
-    private JTextField jTextField7;
-    private JTextField jTextField8;
-    private JTextField jTextField9;
+    private JTextField subject1;
+    private JTextField subject2;
+    private JTextField subject3;
+    private JTextField subject4;
+    private JTextField subject5;
+    private JTextField subject6;
+    private JTextField subject7;
+    private JTextField subject8;
+    private JTextField subject9;
+    private JTextField subject10;
+    private JTextField subject11;
+    private JTextField subject12;
+    private JTextField subject13;
+    private JTextField subject14;
+    private JTextField subject15;
+    private JTextField subject16;
+    private JTextField subject17;
+    private JTextField subject18;
 
 }
