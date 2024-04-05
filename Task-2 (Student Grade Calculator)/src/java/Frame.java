@@ -2,11 +2,13 @@ package src.java;
 
 import java.awt.BorderLayout;
 
+import java.util.List;
+import java.util.ArrayList;
+
 import javax.swing.JTable;
 import javax.swing.JFrame;
 import javax.swing.JButton;
 import javax.swing.JScrollPane;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 
@@ -35,7 +37,7 @@ public class Frame extends JFrame {
 
 		addButton.addActionListener(e -> addRow());
 		clearButton.addActionListener(e -> clearRows());
-		submitButton.addActionListener(e -> JOptionPane.showMessageDialog(Frame.this, "Data Submitted!"));
+		submitButton.addActionListener(e -> CalculationLogic.calculate());
 
 		buttonPanel = new JPanel();
 		buttonPanel.add(addButton);
@@ -49,6 +51,29 @@ public class Frame extends JFrame {
 		this.pack();
 		this.setLocationRelativeTo(null);
 		this.setVisible(true);
+	}
+
+	public int getTableRowCount(){
+		return model.getRowCount();
+	}
+
+	public int getTableColumnCount(){
+		return model.getColumnCount();
+	}
+
+	public List<Object> getColumnData(int colIndex){
+		List<Object> colData = new ArrayList<>();
+		int rows = model.getRowCount();
+		for(int i=0; i<rows; i++){
+			Object value = model.getValueAt(i, colIndex);
+			colData.add(value);
+		}
+		return colData;
+	}
+
+	public void setCellData(int newValue, int row, int col){
+		if(this.getTableRowCount() >= row || this.getTableColumnCount() >= col) return;
+		table.setValueAt(newValue, row, col);
 	}
 
 	private void addRow() {
