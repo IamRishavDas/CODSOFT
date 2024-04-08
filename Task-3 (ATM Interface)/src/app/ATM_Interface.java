@@ -3,6 +3,8 @@ package app;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -10,7 +12,7 @@ import javax.swing.JLabel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
-public class ATM_Interface extends JFrame{
+public class ATM_Interface extends JFrame implements ActionListener{
     private static ATM_Interface atm_interface = new ATM_Interface();
     public  static ATM_Interface getAtm_Interface(){
         return ATM_Interface.atm_interface;
@@ -30,7 +32,7 @@ public class ATM_Interface extends JFrame{
         init();
         this.setLayout(null);
         this.setTitle("ATM Interface");
-        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         this.setSize(600, 450);
         this.setResizable(false);
         this.setLocationRelativeTo(null);
@@ -69,6 +71,7 @@ public class ATM_Interface extends JFrame{
         login = new JButton("Log In");
         login.setBounds(100, 260, 100, 30);
         login.setFont(new Font("Calibri", Font.BOLD, 16));
+        login.addActionListener(this);
         this.add(login);
     }
 
@@ -82,6 +85,13 @@ public class ATM_Interface extends JFrame{
 
     public void setMessageColorGreen(){
         this.message.setForeground(Color.GREEN);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if(e.getSource() == login){
+            new Account();
+        }
     }
 
 }
