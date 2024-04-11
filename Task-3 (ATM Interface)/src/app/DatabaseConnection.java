@@ -13,7 +13,7 @@ public class DatabaseConnection {
 
     private static String url = "jdbc:mysql://localhost:3306/atm";
     private static String user = "root";
-    private static String password = "rootp@$$?0RD";
+    private static String password = ""; // have to enter the actual connecton password for the specified user
 
     private static Connection connection;
     private static Statement statement;
